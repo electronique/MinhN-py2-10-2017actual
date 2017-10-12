@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% if person.name ==  "minh" %}
+		<h1 class="red">Minh is awesome i think</h1>
+	{% else %}
+		<h1 class="blue">Minh is still awesome, this text is just blue</h1>
+		{% endif %}
+</body>
+<style type="text/css">
+	.red {
+		color:red;
+	}
+	.blue {
+		color:blue;
+	}
+</style>
+</html>

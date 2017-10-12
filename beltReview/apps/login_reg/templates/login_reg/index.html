@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<fieldset>
+	<legend>Register</legend>
+	<form action="/register" method="post">
+	 {% csrf_token%}
+		<p>Name:<input type="text" name="name"></p>
+		<p>Alias:<input type="text" name="alias"></p>
+		<p>Email:<input type="text" name="email"></p>
+		<p>Password:<input type="text" name="password"></p>
+		<p>Password Confirm:<input type="text" name="confirm"></p>
+		<input type="submit" name=""></p>
+	</form>
+</fieldset>
+<fieldset>
+	<legend>login</legend>
+	<form>
+		<p>Email:<input type="text" name="email"></p>
+		<p>Password:<input type="text" name="password"></p>
+		<input type="submit" name=""></p>
+	</form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	{%load static %}
+	<link rel="stylesheet" type="text/css" href='{% static "surveyform/surveyform.css" %}'>
+</head>
+<body>
+
+	{{ fname }}
+	{{ lname }}
+	{{ favorite_language }}
+
+	{% if fname == "minh" %}
+	<h1>Woot Minh is our instructor</h1>
+	{% endif %}
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<fieldset>
+		<legend>Work</legend>
+		<p>Earn 3-5 dollars</p>
+		<form action="process/work" method="post">
+		{% csrf_token %}
+			<input type="text" name="location">
+			<input type="submit" name="">
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>Hustle</legend>
+		<p>Earn 5-10 dollars</p>
+		<form action="process/hustle" method="post">
+		{% csrf_token %}
+			<input type="text" name="location">
+
+			<input type="submit" name="">
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>invest</legend>
+		<p>Earn 10-25 dollars</p>
+		<form action="process/invest" method="post">
+		{% csrf_token %}
+			<input type="text" name="location">
+
+			<input type="submit" name="">
+		</form>
+	</fieldset>
+	<fieldset>
+		<legend>College</legend>
+		<p>Earn/lose 50,000</p>
+		<form action="process/learn" method="post">
+		{% csrf_token %}
+			<input type="text" name="location">
+	
+			<input type="submit" name="">
+		</form>
+	</fieldset>
+</body>
+<style type="text/css">
+	fieldset {
+		display: inline-block;
+		width: 250px;
+	}
+</style>
+</html>
+
+<!-- /gold/ -->
